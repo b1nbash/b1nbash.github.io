@@ -6,8 +6,8 @@
 
 ### What is Posten Norge AS  
 Posten Norge AS is a Nordic postal service company that consists of the two brands Posten and Bring. 
-Posten concentrates on the private market in Norway, while Bring focuses on the corporate market in the Nordic region and private customers outside Norway
-https://www.postennorge.no/en/about-us/our-two-brands-posten-and-bring 
+Posten concentrates on the private market in Norway, while Bring focuses on the corporate market in the Nordic region and private customers outside Norway  
+www.postennorge.no/en/about-us/our-two-brands-posten-and-bring  
 
 ### Tracking of shipments   
 A tracking number can consist of up to 18 alphanumeric characters and the customers are using this tracking number to track the shipment from the sender all the way to the recipient.
