@@ -7,7 +7,7 @@
 ### What is Posten Norge AS  
 Posten Norge AS is a Nordic postal service company that consists of the two brands Posten and Bring. 
 Posten concentrates on the private market in Norway, while Bring focuses on the corporate market in the Nordic region and private customers outside Norway  
-www.postennorge.no/en/about-us/our-two-brands-posten-and-bring  
+[https://www.postennorge.no/en/about-us/our-two-brands-posten-and-bring]
 
 ### Tracking of shipments   
 A tracking number can consist of up to 18 alphanumeric characters and the customers are using this tracking number to track the shipment from the sender all the way to the recipient.
@@ -30,10 +30,10 @@ This data could then be used to pick up shipments, gambling that the clerk would
 
 &nbsp;
 ### Initial investigating    
-My first plan was to collect some data to explore this possibility. I reckoned a simple python script using the requests library would do the job. Viewing the source code of the tracking page (https://sporing.posten.no/sporing/?lang=en), I saw that the page was using JavaScript and this meant I couldn’t use this URL to get the data I wanted, at least not easily. I started to research how to somehow web-scrape JavaScript-pages, but I felt that all the solutions were old and outdated.  
+My first plan was to collect some data to explore this possibility. I reckoned a simple python script using the requests library would do the job. Viewing the source code of the tracking page ([https://sporing.posten.no/sporing/?lang=en]), I saw that the page was using JavaScript and this meant I couldn’t use this URL to get the data I wanted, at least not easily. I started to research how to somehow web-scrape JavaScript-pages, but I felt that all the solutions were old and outdated.  
 
-After some time, I googled “Posten API” to see if there was an API available. Apparently Bring, Posten’s corporate service, offered multiple API’s (https://developer.bring.com/) but none of these was what I was looking for. So, if Bring had API’s, why wouldn’t Posten have it too?
-With this in mind, I further investigated the tracking page by opening developer tools, and when looking for the type “fetch”, I finally found a tracking API link (https://sporing.bring.no/tracking/api/fetch/).
+After some time, I googled “Posten API” to see if there was an API available. Apparently Bring, Posten’s corporate service, offered multiple API’s ([https://developer.bring.com/]) but none of these was what I was looking for. So, if Bring had API’s, why wouldn’t Posten have it too?  
+With this in mind, I further investigated the tracking page by opening developer tools, and when looking for the type “fetch”, I finally found a tracking API link ([https://sporing.bring.no/tracking/api/fetch/]).  
 Now the fetching of data could begin. 
 
 &nbsp;
@@ -105,7 +105,7 @@ I decided to create a simple database that showed tracking number, status, picku
 ![Screenshot](images/possibleBuyersHidden.jpg?raw=true)  
 
 How could I be sure that the names in the column “possibleBuyer” were in fact the buyer, and hence there existed a vulnerability in the system? I couldn’t, therefore the prefix “possible”. But I had a way to strengthen my suspicions.  
-Norway is a large country in relative to the population, and we have a lot of small villages. My assumption was if I could match a “possibleBuyer/city” with the result from www.1881.no (Database of names, numbers and addresses based upon the National Population Register), I could conclude that “possibleBuyer” in fact was the actual buyer. 
+Norway is a large country in relative to the population, and we have a lot of small villages. My assumption was if I could match a “possibleBuyer/city” with the result from [www.1881.no] (Database of names, numbers and addresses based upon the National Population Register), I could conclude that “possibleBuyer” in fact was the actual buyer. 
 
 So, I started experimenting. In the image above, nr. 1982 shows the village “Ådalsbruk” with a rather unique name as the buyer. This village has a population of 595 (2008). This was perfect as the probability of a person named exactly the same in a village with that population size is very low. I looked up the name in 1881.no, and there was only one person with that exact name in the entire country. And yes, this person was registered in Ådalsbruk.  
 Okay, my assumption seemed correct . However, this approach was not always 100% successful because people don’t have to update their address in the National Register when they move to another place. A person can be registered in Bergen, but still live in Oslo, or even Paris, and get mail to the address in Oslo or Paris.  
