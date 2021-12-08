@@ -1,4 +1,4 @@
-# Disclosure of vulnerability in Posten
+# Disclosure of vulnerability in Posten’s tracking system
 
 <mark>Posten is not aware that anyone has been abused as a result of this vulnerability</mark>
 &nbsp;  
