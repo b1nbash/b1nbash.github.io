@@ -15,7 +15,8 @@ When a shipment is ready for pickup, a pickup code is visible for anyone in poss
 
 ### Pickup    
 Posten Norge AS has in recent years shut down almost every post office in the country due to logistic and economic reasons. Pickup location for arrived shipments is now most often in a grocery store. This means that the shipments are handled by the employees working in the grocery store, not employees from Posten.
-
+When a customer picks up a shipment ordered online from the pickup location, the customer is required to say either a pickup-code, shipment number, parcel number or a barcode
+in combination with their name/show ID
 
 
 ![Screenshot](images/trackingHome.jpg?raw=true)
