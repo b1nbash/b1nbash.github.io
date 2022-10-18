@@ -1,6 +1,6 @@
 # Disclosure of vulnerability in Posten’s tracking system
 
-<mark>Posten is not aware that anyone has been abused as a result of this vulnerability</mark>
+<mark>**Posten is not aware that anyone has been abused as a result of this vulnerability**</mark>
 &nbsp;  
 
 
@@ -136,5 +136,5 @@ I immediately notified Posten Norge AS about this as well, and they responded wi
 &nbsp;
 ## PSS  
 
-Posten Norge AS deserves credit for taking this matter seriously and I am impressed of how quick they fixed the issues.
+Posten Norge AS deserves credit for taking this matter seriously and I am impressed of how quickly they fixed the issues.
 
